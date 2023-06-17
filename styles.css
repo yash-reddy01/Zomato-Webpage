@@ -90,6 +90,40 @@ body {
     color: #1d3557;
 }
 
+.restaurants__container {
+    margin-top: 48px;
+}
+
+.restaurants__container__text {
+    font-weight: 1100;
+    width: 100%;
+}
+
+.restaurant1 {
+    width: 150px;
+    height: 80px;
+}
+
+.restaurant2 {
+    width: 150px;
+    height: 80px;
+}
+
+.explore__menu__view {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%, #dd2476 51%, #ff512f 100% 
+    );
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin: 32px 0px;
+    text-align: center;
+
+}
+
 @media (min-width: 768px) {
     .explore__menu__lists {
         margin-top: 45px;
