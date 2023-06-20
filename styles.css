@@ -92,22 +92,60 @@ body {
 
 .restaurants__container {
     margin-top: 48px;
+    margin-bottom: 64px;
 }
 
 .restaurants__container__text {
-    font-weight: 1100;
+    font-size: 24px;
+    font-weight: 900;
     width: 100%;
+    color: #1d3557;
+    line-height: 2rem;
 }
 
 .restaurant1 {
     width: 150px;
     height: 80px;
+    border-radius: 4px;
 }
 
 .restaurant2 {
-    width: 150px;
-    height: 80px;
+    width: 175px;
+    height: 100px;
+    border-radius: 4px;
 }
+
+.restaurant3 {
+    width: 185px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.restaurant4 {
+    width: 140px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+
+.restaurants__list__row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.restaurants__list__row2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.restaurants__container__images {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 
 .explore__menu__view {
     background-image: linear-gradient(
@@ -116,12 +154,66 @@ body {
     );
     color: #fff;
     border: none;
+    transition: 0.3s;
     padding: 16px;
     border-radius: 6px;
     font-weight: 600;
     margin: 32px 0px;
     text-align: center;
 
+}
+
+.subscribe__input__field {
+    display: flex;
+    align-items: center;
+}
+
+.update__text {
+    font-weight: 800;
+    color: #1d3557;
+}
+
+.input__email {
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+footer {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%, #dd2476 51%, #ff512f 100% 
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+footer > img {
+    width: 300px;
+    filter: brightness(0) invert(1);
+}
+
+footer > ul {
+    margin-top: -1rem;
+    color: #fff;
+}
+
+footer > ul > li{
+    margin: 5px 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.email__subscription__container{
+    margin: 48px 0 64px 0;
 }
 
 @media (min-width: 768px) {
@@ -165,6 +257,56 @@ body {
         z-index: -3;
         transform: skewY(-5deg);
     }
+
+    .explore__menu__view {
+        background: none;
+    }
+
+    .restaurants__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .restaurants__container__text{
+        font-size: 30px;
+        line-height: 2.25rem;
+    }
+
+   .restaurant1 {
+    margin: 0 5px;
+   }
+   .restaurant2 {
+    margin: 0 5px;
+   }
+   .restaurant3 {
+    margin: 0 5px;
+   }
+   .restaurant4 {
+    margin: 0 5px;
+   }
+
+    .email__subscription__container {
+        display: flex;
+        justify-content: center;
+        margin: 48px auto 64px;
+    }
+
+    .input__email {
+        width: 20rem;
+        border-radius: 6px;
+    }
+
+    .update__text {
+        font-size: 32px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 3px;
+    }
+        
 }
 
 
@@ -173,6 +315,15 @@ body {
     .explore__menu__lists {
         gap: 25px;
     }
+
+    .explore__menu__view:hover {
+        background: #fff;
+        color: #dd2476;
+        margin: 2rem 20rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
     .container {
         max-width: 70%;
     }
@@ -195,5 +346,37 @@ body {
 
     .explore__menu__text {
         font-size: 48px;
+    }
+
+    .restaurant1 {
+        width: 250px;
+        height: 180px;
+        border-radius: 4px;
+    }
+    
+    .restaurant2 {
+        width: 300px;
+        height: 260px;
+        border-radius: 4px;
+    }
+    
+    .restaurant3 {
+        width: 300px;
+        height: 260px;
+        border-radius: 4px;
+    }
+    
+    .restaurant4 {
+        width: 250px;
+        height: 180px;
+        border-radius: 4px;
+    }
+
+    .restaurants__container__text {
+        font-size: 40px;
+    }
+
+    .update__text {
+        font-size: 44px;
     }
 }
